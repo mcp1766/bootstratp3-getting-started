@@ -17,10 +17,64 @@
 </head>
 <body>
 <!--  Page Content -->
-<div class="container">
-	<h1>Hello about pages</h1>
-	<p>This page use the /assets/css/main.css file which contains the 3 css files (bootstrap, font-awesome and style).</p>
+<!--  Page Content -->
+<div class="container-fluid">
+	<div class="row">
+		<h1>About page</h1>
+		<div class="col-xs-6 col-xs-offset-3 col-sm-4 col-sm-offset-0  box" style="background-color: orange;"></div>
+	</div>
 </div>
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-sm-9 box bg-success">
+			Level 1: .col-sm-9
+			<div class="row">
+				<div class="col-xs-8 col-sm-6 box-small bg-warning">
+					Level 2: .col-xs-8 .col-sm-6
+					<div class="row">
+						<div class="col-xs-12 col-sm-12 box-xsmall bg-info">
+							Level 3: col-xs-12 col-sm-12
+							<div class="row">
+								<div class="col-xs-8  col-sm-6 box-xxsmall bg-danger">Level 4: col-xs-8 col-sm-5</div>
+								<div class="col-xs-8  col-sm-6 box-xxsmall bg-danger">Level 4: col-xs-8 col-sm-5</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-xs-4 col-sm-6 box-small bg-warning">Level 2: .col-xs-4 .col-sm-6</div>
+			</div>
+		</div>
+		<div class="col-sm-3 box bg-danger">
+			Level 1: .col-sm-3
+			<div class="row">
+				<div class="col-xs-6 col-sm-4 box-small bg-info">Level 2: .col-xs-4 .col-sm-4</div>
+				<div class="col-xs-4 col-sm-4 box-small bg-info">Level 2: .col-xs-3 .col-sm-4</div>
+				<div class="col-xs-3 col-sm-4 box-small bg-info">Level 2: .col-xs-4 .col-sm-4</div>
+			</div>
+		</div>
+	</div>
+</div>
+<p>
+	Normally the first column has to be on the left side because it is declared first. But because we use the push-3 it will be placed to the right.
+	<br>
+	The second declaration has normally to be placed to the right but because we used the pull then it will be placed to the left of the 1st column.
+	<br>
+	See that we declared the 9 colum with a push of 3 then use declard the 3 cols with a pull of 9. The total is 12 column indead.
+	<br>
+</p>
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-xs-12 col-sm-3 col-md-9 col-md-push-3 box bg-info">
+			<h3>Push on md</h3>
+			.col-xs-12 .col-sm-3 .col-md-9 .col-md-push-3
+		</div>
+		<div class="col-xs-12 col-sm-9 col-md-3 col-md-pull-9 box bg-success">
+			<h3>Pull on md</h3>
+			.col-xs-12 .col-sm-9 .col-md-3 .col-md-pull-9
+		</div>
+	</div>
+</div>
+
 
 <!-- Bootstrap core JavaScript
     ================================================== -->
