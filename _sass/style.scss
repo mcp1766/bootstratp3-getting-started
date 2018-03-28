@@ -24,6 +24,9 @@
 .test {
 	display: flex;
 }
+form, .form-sample {
+	margin-bottom:20px;
+}
 .form-sample .form-control {
 	width: auto;
 }
