@@ -19,8 +19,6 @@
     <![endif]-->
 </head>
 <body>
-
-
 	<div class="container-fluid">
 		<div class="row">
 			<h2 class="text-center">Bootstrap 3 - Forms</h2>
@@ -29,54 +27,52 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-xs-6">
-				<pre>
-			<code>
-form
-  form-group
-     label
-     input (class=form-control / type=text)
-  form-group
-     label
-     input (class:form-control - type=email)
-  div (checkbox)
-    label
-       input (class=form-control - type=checkbox)
-  button (type=submit / class=btn btn-default)
-			</code>
-		</pre>
+				<pre><code>
+form (class=form-horizontal)
+  div (class="form-group")
+    p (class=help-block)
+    label (class="col-xs-2 control-label")
+    div (class="col-xs-10)
+      p (class="form-control-static")
+  div (class="form-group")
+    label (class="col-xs-2 control-label")
+    div (class="col-xs-10")
+      input (type="password" class="form-control")
+  div (class="form-group")
+    div (class="col-xs-2")
+      button (type="submit" / class="btn btn-default")			
+				</code></pre>
 			</div>
 			<div class="col-xs-6">
-				<h3>Basic form</h3>
-				<div class="col-xs-6">
-					<form action="" class="form-sample">
-						<div class="form-group">
-							<label for="inputsample">Name</label> <input type="text"
-								class="form-control" id="inputsample" name="inputsample" />
+				<form action="" class="form-horizontal">
+					<div class="form-group">
+						<p class="help-block">Example of a p with a class of <b>form-control-static</b> to show the static form control. <br />
+							This p tag replace the non-static control <b>input</b>.  
+						</p>
+						<label for="" class="col-xs-2 control-label">Email
+							<!--  no input control ! -->
+						</label>
+						<div class="col-xs-10">
+							<p class="form-control-static">email@email-example.com</p>
 						</div>
-						<div class="form-group">
-							<label for="emailsample">email</label> <input type="email"
-								class="form-control" id="emailsample" name="emailsample" />
+					</div>
+					<div class="form-group">
+						<label for="" class="col-xs-2 control-label">Password							
+						</label>
+						<div class="col-xs-10">
+							<input type="password" class="form-control" placeholder="Password" /> 
 						</div>
-						<div class="checkbox">
-							<label for="checkboxsample"> <input type="checkbox"
-								name="checkboxsample" id="chackboxsample" value="1" /> Age > 18
-								?
-							</label>
+					</div>
+					<div class="form-group">
+						<div class="col-xs-2">
+							<button type="submit" class="btn btn-default">Send</button>
 						</div>
-						<button type="submit" class="btn btn-default">Enter site</button>
-					</form>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div class="container-fluid">
-		<div class="row">
-			<div class="container">
+					</div>
+				</form>
 				<a href="../form.html">Back to Form Chapter ..</a>
 			</div>
 		</div>
 	</div>
-
 	<!-- Bootstrap core JavaScript
     ================================================== -->
 	<!-- Placed at the end of the document so the pages load faster -->
